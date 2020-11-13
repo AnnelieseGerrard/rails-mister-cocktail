@@ -1,8 +1,11 @@
-<h1>New Cocktail</h1>
+
+
+<div class="new-banner" style="background-image: url(<%= (image_path("ingredientscollection.jpg")) %>), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+      <h2>New Cocktail</h2>
+    </div>
 
 <%#= render 'form', cocktail: @cocktail %>
 
-<%= link_to 'Back', cocktails_path %>
 
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.error_notification %>
@@ -14,7 +17,9 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-outline-dark"  %>
   </div>
+
+<%= link_to 'Back', cocktails_path, class: "btn btn-outline-dark" %>
 <% end %>
 
