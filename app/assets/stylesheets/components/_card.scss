@@ -8,36 +8,50 @@ cards {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 250px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
-.card-category a {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-
-.card-tags {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  width: 80%;
-  span {
-    background: $blue;
-    font-size: .7em;
-    padding: 2px 4px;
-    border-radius: 3px;
-  }
-  a {
+   a {
     color: white;
   }
+}
+
+.card-banner {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  color: white;
+  font-size: 200px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+}
+
+.title {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
