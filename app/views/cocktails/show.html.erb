@@ -9,9 +9,7 @@
 
     <div class="subtitle">
         <h3>Ingredients</h3>
-    </div>
-
-    <ul class="list-group">
+         <ul class="list-group">
       <% @cocktail.doses.each do |dose| %>
         <li class="list-group-item">
           <%= dose.ingredient.name %> - <%= dose.description %>
@@ -19,12 +17,17 @@
         </li>
       <% end %>
     </ul>
+        <%= link_to 'Add Ingredient', new_cocktail_dose_path(@cocktail.id), class: "btn btn-outline-dark"  %>
+    </div>
 
-    <%= link_to 'Delete', cocktail_path(@cocktail), method: :delete, class: "btn btn-outline-dark" %>
 
-    <%= link_to 'Add Ingredient', new_cocktail_dose_path(@cocktail.id), class: "btn btn-outline-dark"  %>
+
+    <%#= link_to 'Delete', cocktail_path(@cocktail), method: :delete, class: "btn btn-outline-dark" %>
+
+
 
   </div>
-</div>
+
+
 
 

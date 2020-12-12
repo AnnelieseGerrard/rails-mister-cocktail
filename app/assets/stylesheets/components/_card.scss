@@ -130,3 +130,43 @@ ul {
   margin: 0;
 }
 
+
+.card-product {
+display: flex;
+background-color: #fff;
+align-items: center;
+background-size: cover;
+border-radius: 5px;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+margin-bottom: 10px;
+width: 600px;
+height: 400px;
+position: relative;
+}
+
+.courses {
+  height: 300px;
+}
+
+.card-product img {
+  width: 200px;
+  height: 100%;
+  margin-right: 16px;
+  margin-left: 0px;
+  object-fit: cover;
+
+}
+
+.img-circle {
+  &:hover{
+    position: relative;
+    top: -5px;
+  }
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
