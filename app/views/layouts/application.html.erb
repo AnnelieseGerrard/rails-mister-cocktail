@@ -1,6 +1,35 @@
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to cocktails_path, class: "navbar-brand" do %>
+    <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to "Home", cocktails_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Post an Item", new_cocktail_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+        </li>
+        <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+
+    </ul>
+  </div>
+</div>
+
 <!DOCTYPE html>
-<html>
+
   <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>RailsMisterCocktail</title>
@@ -9,16 +38,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-<body>
 
-  <div class="card-banner" style="background-image: url(<%= (image_path("homepgcocktail.jpg")) %>), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
-       <div class="d-flex justify-content-between justify-content-center align-items-center p-3 container">
-        <h1>Your Go To Cocktail Menu</h1>
-       <%= link_to "Create New Cocktail", new_cocktail_path, class: "btn btn-light" %>
-    <%= link_to "Home", cocktails_path, class: "btn btn-light" %>
-    </div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.pinimg.com/originals/2a/c4/77/2ac477bc2708882901461560be69b9ab.jpg);">
+  <div class="container">
+    <h1>Tasty Cocktails!</h1>
+    <p>Which cocktail will you pick?</p>
   </div>
+</div>
+
+
+  </head>
+
+
+
 
 <!-- navbar -->
     <!-- <div class="d-flex justify-content-between align-items-center p-3 container bg-white"> -->
